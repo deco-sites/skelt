@@ -89,7 +89,7 @@ function CategoryList(props: Props) {
         alignment={layout.headerAlignment || "center"}
       />
 
-      <Slider class="carousel carousel-start gap-4 lg:gap-8 row-start-2 row-end-5">
+      <Slider class="carousel carousel-start gap-4 lg:gap-8 row-start-2 row-end-5 justify-center">
         {list.map((
           { tag, label, description, href, image, buttonText },
           index,
@@ -118,8 +118,8 @@ function CategoryList(props: Props) {
                       class="card w-full"
                       src={image}
                       alt={description || label || tag}
-                      width={160}
-                      height={195}
+                      width={250}
+                      height={270}
                       loading="lazy"
                     />
                   </figure>
