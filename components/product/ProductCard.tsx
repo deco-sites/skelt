@@ -252,20 +252,20 @@ function ProductCard({ product, preload, itemListName, layout }: Props) {
         {l?.hide?.allPrices ? "" : (
           <div class="flex flex-col gap-2">
             <div
-              class={`flex flex-col gap-0 ${
+              class={`flex flex-row items-center gap-2 ${
                 l?.basics?.oldPriceSize === "Normal"
                   ? "lg:flex-row lg:gap-2"
                   : ""
               } ${align === "center" ? "justify-center" : "justify-start"}`}
             >
               <div
-                class={`line-through text-base-300 text-xs ${
+                class={`line-through text-[#434345] text-sm ${
                   l?.basics?.oldPriceSize === "Normal" ? "lg:text-xl" : ""
                 }`}
               >
                 {formatPrice(listPrice, offers!.priceCurrency!)}
               </div>
-              <div class="text-accent text-base lg:text-xl">
+              <div class="text-[#434345] text-base lg:text-xl">
                 {formatPrice(price, offers!.priceCurrency!)}
               </div>
             </div>
