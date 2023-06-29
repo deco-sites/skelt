@@ -55,7 +55,7 @@ function Navbar({ items, searchbar }: {
             <Icon id="User" width={20} height={20} strokeWidth={0.4} />
           </a>
           <a
-            class="btn btn-circle btn-sm btn-ghost"
+            class="btn btn-circle btn-sm btn-ghost hidden"
             href="/wishlist"
             aria-label="Wishlist"
           >

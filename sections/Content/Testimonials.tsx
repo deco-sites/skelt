@@ -92,7 +92,7 @@ const Testimonal = ({ image, text, user }: Testimonial) => (
         height={100}
       />
     )}
-    <h3 class="text-xl lg:text-2xl">
+    <h3 class="text-base">
       {text}
     </h3>
     <div class="flex flex-col items-center gap-4">
@@ -133,7 +133,7 @@ export default function Testimonials(
   };
 
   return (
-    <div class="w-full container px-4 py-8 flex flex-col gap-14 lg:gap-20 lg:py-10 lg:px-0">
+    <div class="w-full px-4 py-8 flex flex-col gap-14 lg:gap-8 lg:py-10 lg:px-0 bg-[#f6d6c7] text-base">
       <Header
         title={title}
         description={description}
@@ -164,12 +164,12 @@ export default function Testimonials(
             ))}
           </Slider>
           <>
-            <div class="z-10 absolute -left-2 lg:-left-8 top-1/2">
+            <div class="z-10 absolute -left-2 lg:-left-8 top-1/2 hidden">
               <Slider.PrevButton class="btn btn-circle btn-outline">
                 <Icon size={20} id="ChevronLeft" strokeWidth={3} />
               </Slider.PrevButton>
             </div>
-            <div class="z-10 absolute -right-2 lg:-right-8 top-1/2">
+            <div class="z-10 absolute -right-2 lg:-right-8 top-1/2 hidden">
               <Slider.NextButton class="btn btn-circle btn-outline">
                 <Icon size={20} id="ChevronRight" strokeWidth={3} />
               </Slider.NextButton>
